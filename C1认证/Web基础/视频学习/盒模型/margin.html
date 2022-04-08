@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>叠压、塌陷现象</title>
+    <link rel="icon" href="../../images/头像.ico">
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            /* 外边距  上右下左赋值 */
+        }
+
+        /* 叠压现象 */
+        /* 常态下，兄弟标签的上下间距以最大值为准 */
+        .d1 {
+            margin-bottom: 100px;
+        }
+        .d2 {
+            margin-top: 100px;
+        }
+        /* d1和d2之间的间距是150px */
+
+        /* 塌陷问题 */
+        /* 原因：常态下，父级的第一个子级标签为块标签，并且使用了margin或margin-top */
+        .fa {
+            width: 300px;
+            height: 300px;
+        }
+        .son {
+            width: 80px;
+            height: 80px;
+            background-color: gold;
+            margin-top: 20px;
+        }
+
+        /* 塌陷问题的解决方案 */
+        .mm {
+            width: 300px;
+            height: 300px;
+            /* 1.给父级添加边距 */
+            /* border: 1px solid red; */
+
+            /* 2.添加内边距，需计算出height的减少值 */
+            /* padding-top: 50px; */
+
+            /* 3.溢出隐藏 */
+            /* visible: 默认值，可变的 */
+            /* hidden：超出父级的部分进行隐藏 */
+            /* scroll：超出父级的部分隐藏，并可以进行滚动 */
+            overflow: hidden;
+        }
+        .son {
+            width: 80px;
+            height: 80px;
+            background-color: gold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">CSDN</div>
+    <div class="d2">C1</div>
+    <br>
+    <br>
+    <br>
+    <div class="fa">
+        <!-- 行块标签不受塌陷 -->
+        <img style="margin-top: 10px;" width="200px" src="../../images/背景.jpg" alt="背景">
+        <!-- 行标签不支持margin -->
+        <span style="margin-top: 50px;">222222222222222</span>
+        <!-- 子级第一个块标签为受塌陷 -->
+        <div class="son"></div>
+        <p style="margin-top: 20px;">1111111111111111</p>
+    </div>
+    <br>
+    <br>
+
+    <div class="mm">
+        <div class="son"></div>
+    </div>
+</body>
+</html>
+
+
+<!-- overflow: hidden的作用
+        1.隐藏溢出
+        2.解决塌陷
+        3.清除浮动
+-->

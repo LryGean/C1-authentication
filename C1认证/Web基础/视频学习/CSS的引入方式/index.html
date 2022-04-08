@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>CSS的引入方式</title>
+    <link rel="icon" href="../../images/头像.ico">
+    <!-- 外部样式表 -->
+    <!-- <link rel="stylesheet" href="../CSS/first.css"> -->
+    <style>
+        /* 引入其他的CSS样式 */
+        @import url("../CSS/second.css");
+        /* 内部样式表 */
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p>C1的CSS部分</p>
+    <!-- 内联样式表 -->
+    <div style="width: 200px;background-color: cyan;"></div>
+</body>
+</html>

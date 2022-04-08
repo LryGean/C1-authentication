@@ -1,0 +1,4 @@
+@import url(style.css);         /* 必须放在开头 */   
+h1 {
+    color: green;
+}

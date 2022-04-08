@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>块级元素与行内元素</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        * {
+            padding: 0;
+            /* 外边距 */
+            margin: 0;
+        }
+        span {
+            width: 300px;
+            height: 50px;
+            margin: 30px;
+            /* 转化成行内块级元素：上下左右边距能对旁边起影响 */
+            display: inline-block;
+        }
+        p {
+            width: 300px;
+            height: 50px;
+            margin: 30px;
+            /* 转化成行内元素 */
+            display: inline;
+        }
+        input {
+            width: 300px;
+            height: 50px;
+            margin: 30px;
+            /* 设置成块级元素：每个元素独占一行 */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- p:典型的块级元素 -->
+    <p>CSDN能力认证</p>
+    <p>CSDN能力认证</p>
+    <!-- 行内标签 -->
+    <span>CSDN</span>
+    <span>C1见习工程师能力认证</span>
+    <span>C1见习工程师能力认证</span>
+    <span>C1见习工程师能力认证</span>
+    <span>C1见习工程师能力认证</span>
+    <span>C1见习工程师能力认证</span>
+    <span>C1见习工程师能力认证</span>
+    <span>C1见习工程师能力认证</span>
+    <span>C1见习工程师能力认证</span>
+    <span>C1见习工程师能力认证</span>
+    <!-- input:典型的行内块级元素 -->
+    <input type="text" placeholder="请输入">
+    <input type="text" placeholder="请输入">
+    <input type="text" placeholder="请输入">
+</body>
+</html>

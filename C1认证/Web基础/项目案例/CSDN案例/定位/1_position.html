@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>1_position</title>
+    <link rel="icon" href="../../../images/头像.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+       div {
+           width: 100px;
+           height: 100px;
+           background-color: gold;
+           margin: 10px;
+       }
+       .d2 {
+           background-color: pink;
+           /* 相对定位 */
+           /* 相对于自己原位置进行偏移，不脱离文档流 */
+           position: relative;
+           /* 脱离文档流 */
+           /* position: absolute; */
+           
+           /* 向左偏移 */
+           /* left: 100px; */
+           /* right: 50px; */
+           
+           /* 向下偏移 */
+           /* top: 50px; */
+           /* 向上偏移 */
+           /* bottom: 50px; */
+       }
+    </style>
+</head>
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>常用选择器</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        /* 通配选择器 */
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        
+        /* 标签选择器 */
+         p {
+             color: red;
+         }
+        
+        /* 群组选择器 */
+        h1, p {
+            color: red;
+        }
+
+        /* 类选择器 */
+        .c {
+            color: greenyellow;
+        }
+        /* 多类 */
+        .big {
+            font-size: 30px;
+        }
+        
+
+        /* id选择器 */
+        /* 一个id名在同一个HTML文件中只能出现一次 */
+        #big {
+            font-size: 40px;
+            color: brown;
+        }
+
+        /* 后代选择器:所有子集 */
+        div p {
+            color: cyan;
+        }
+
+        /* 子代选择器：直接子集 */
+        span>p {
+            color: pink;
+        }
+
+        /* 属性选择器 */
+        [title="C5认证"] {
+            text-decoration: line-through;
+        }
+
+    </style>
+</head>
+<body>
+    <p>123</p>
+    <p class="c">CSDN</p>
+    <h1>Welcome to CSDN</h1>
+    <p class="c big">C1认证</p>
+    <p id="big">Hello</p>
+    <ul>
+        <li>看山是山，看水是水</li>
+        <li>看山不是山，看水不是水</li>
+        <li>看山还是山，看水还是水</li>
+    </ul>
+
+    <div>
+        <p>C4认证</p>
+    </div>
+
+    <span>
+        <p title="C5认证">C5认证</p>
+        <div>
+            <p>123445</p>
+        </div>
+    </span>
+</body>
+</html>

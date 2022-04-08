@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>伪元素选择器</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        /* * {
+            border: 0;
+            padding: 0;
+            margin: 0;
+        } */
+        
+        nav {
+            width: 100%;
+            height: 70px;
+            background-color: cornflowerblue;
+            line-height: 70px;
+            display:flex;
+        }
+
+        ul {
+            margin: 0 auto;
+            /* list-style: none; */
+            
+        }
+        ul li,a {
+            float: left;
+            margin: 0 30px;
+            color: #fff;
+            padding: 0 10px;
+            text-align: center;
+            text-decoration-line: none;
+        }
+        input {
+            /* text-align: center; */
+            vertical-align: middle;
+            width: 240px;
+            height: 60px;
+            size: 600px;
+            padding: 0 10px;
+            line-height: 30px;
+        }
+        /* .desc {
+            width: 1430px;
+            font-size: 18px;
+            line-height: 30px;
+        } */
+    </style>
+    <style>
+        /* 设置输入框为圆角矩形 */
+        input {
+            margin-top: 10px;
+            border-radius: 28px;
+            border-style: solid;
+            border-color: #00FF00;
+            width: 50%;
+        }
+        input::placeholder {
+            font-size: 30px;
+            color: blueviolet;
+        }
+        /* input::-webkit-input-placeholder：webkit内核 */
+        /* input::-moz-input-placeholder：Firefox内核 */
+        /* input::-ms-input-placeholder：IE内核 */
+        input::-moz-input-placeholder {
+            line-height:normal;
+        }
+        .desc::first-line {
+            font-size: 30x;
+            color: #000;
+            font-weight: bold;
+        }
+        /* 更改无序列表前小圆点的符号 */
+        ul li::marker {
+            content: '◆';
+        }
+        /* p元素修改maker属性 */
+        /* （1） */
+        .desc {
+            display: list-item;
+        }
+        .desc::marker {
+            content: '¥';
+        }
+        p::before {
+            content: "开始";
+        }
+        p::after {
+            content: "结束";
+        }
+        p::first-letter {
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="https://ac.csdn.net/" target="_blank">技能大赛</a>
+            <li>C认证</li>
+            <li>微认证</li>
+            <li>考试入口</li>
+            <li>伙伴计划</li>
+            <li>证书查询</li>
+        </ul>
+    </nav>
+    <div style="text-align:center;vertical-align:middle;">
+        <input type="text" placeholder="请输入搜索内容">
+    </div>
+    <p class="desc" align="center">C站能力认证是由中国软件开发者网CSDN制定并推出的一个认证标准,<br>
+        C站软件工程师能力认证模块包含：C1见习能力认证、C4专项能力认证、C5全栈能力认证，<br>
+        开发者们根据实际情况和目标选择适合自己的认证路径
+    </p>
+</body>
+</html>

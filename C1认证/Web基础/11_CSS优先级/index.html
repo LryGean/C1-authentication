@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>CSS优先级</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        /* 权重：100 + 1 + 1 = 102 */
+        /* #box ul li {
+            color: green;
+        } */
+
+        /* !import */
+        #items li {
+            color: blue !important;
+        }
+
+        /* 权重相同是遵从运行顺序 */
+        /* 权重：100 + 1 = 101 */
+        #items li {
+            color: blue;
+        }
+        /* 权重：100 + 1 = 101 */
+        #box li {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul id="items">
+            <li>C1见习工程师</li>
+            <li>C4前端工程师基础能力认证</li>
+            <li>C4Java工程师基础能力认证</li>
+            <li>C4Python工程师基础能力认证</li>
+            <li>C5全栈工程师能力认证</li>
+        </ul>
+    </div>
+</body>
+</html>

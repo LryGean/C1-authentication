@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>3_position</title>
+    <link rel="icon" href="../../../images/头像.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+       
+       /* 元素脱离文档流,行元素支持所有CSS样式 */
+       div {
+           width: 100px;
+           height: 100px;
+           background-color: gold;
+           margin: 10px;
+       }
+
+       .d1 {
+           /* 默认兄弟标签都为0 */
+           /* z-index: 1;*/    
+           background-color: tomato;
+       }
+       .d2 {
+            background-color: greenyellow;
+       }
+       .d3 {
+           /* z-index: -1; */
+           background-color: skyblue;
+       }
+       div {
+           position: absolute;
+       }
+
+       .dd1 {
+           width: 300px;
+           height: 300px;
+           background-color: tomato;
+           margin: 100px;
+           overflow: hidden;
+           position: absolute;
+       }
+       .dd2 {
+           width: 200px;
+           height: 200px;
+           background-color: greenyellow;
+           margin: 50px;
+           overflow: hidden;
+           position: relative;
+       }
+       .dd3 {
+           width: 100px;
+           height: 100px;
+           background-color: skyblue;
+           /* margin: 50px; */
+           /* 绝对定位 */
+           position: absolute;
+           left: 10px;
+       }
+       section {
+           width: 100px;
+           height: 300px;
+           background-color: deepskyblue;
+           /* 绝对定位,固定定位 */
+           position: fixed;
+           /* left: 0; */
+           right: 0;
+           bottom: 0;
+       }
+    </style>
+</head>
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <div class="dd1">
+        <div class="dd2">
+            <!-- dd3会找最近的父级，父级没有用定位，就找body -->
+            <div class="dd3"></div>
+        </div>
+    </div>
+    <section></section>
+</body>
+</html>
+
+<!-- absolute使span支持宽高 -->

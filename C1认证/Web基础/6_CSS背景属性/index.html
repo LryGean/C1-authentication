@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>CSS背景属性</title>
+    <link rel="icon" href="../images/头像(1).ico">
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            
+            background-color: antiquewhite;
+            background-image: url(../images/背景.jpg);
+            /* 默认值repeat，允许重复 */
+            background-repeat: no-repeat;    
+            background-size: cover;
+            /*右上开始展示*/
+            background-position: top right;   
+            
+            /* 简写背景属性 */
+            /* 注意：background-position在background-size的前面 */
+            background: antiquewhite url(../images/背景.jpg) no-repeat top right / cover;
+        }
+    </style>
+</head>
+<body>
+    <div><p>这是背景</p></div>
+</body>
+</html>

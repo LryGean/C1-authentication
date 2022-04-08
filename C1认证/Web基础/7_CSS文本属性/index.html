@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>CSS文本属性</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        .p1 {
+            font-size: 30px;
+            color: blue;
+            /* 粗体 */
+            font-weight: bold;
+            font-family: 'Times New Roman', 'Times', 'serif';
+            /* 行高 */
+            line-height: 50px;
+
+            /* 字体装饰线 */
+            /* 值：
+               underline:下划线
+               line-through:删除线
+               wavy:波浪线
+               double:双实线 */
+            text-decoration: line-through red double;
+
+            /* lowercase:英文字母转为小写
+               uppercase:英文字母转为大写 */
+            text-transform: lowercase;
+
+            /* 文本对齐方式 */
+            /* text-align: left; */
+
+            /* 设置缩进 */
+            text-indent: 50px;
+
+        }
+        
+        .d1 {
+            margin: 0 auto;
+            height: 240px; 
+
+            font-size: 30px;
+            color: #FF8800;
+            /* 粗体 */
+            font-weight: bold;
+            font-family: 'Times New Roman', 'Times', 'serif';
+            writing-mode: vertical-lr;
+        }
+
+        .d2 {
+            margin: 0 auto;
+            height: 210px; 
+
+            font-size: 30px;
+            color: #FF8800;
+            /* 粗体 */
+            font-weight: bold;
+            font-family: 'Times New Roman', 'Times', 'serif';
+            writing-mode: vertical-lr;
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">C站能力认证是由中国软件开发者网CSDN制定并推出的一个认证标准,C站软件工程师能力认证模块包含：
+        C1见习能力认证、C4专项能力认证、C5全栈能力认证，开发者们根据实际情况和目标选择适合自己的认
+        证路径</p>
+    <div class="d1">欲话毗陵君反袂，欲言夏口我沾衣。谁知临老相逢日，悲叹声多语笑稀。</div>
+    <div class="d2">最向往的时光，是一如既往。</div>
+</body>
+</html>

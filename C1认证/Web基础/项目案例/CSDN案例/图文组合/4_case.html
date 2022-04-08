@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>case4</title>
+    <link rel="icon" href="../../../images/头像.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        section {
+            width: 380px;
+            overflow: hidden;
+        }
+        .item {
+            width: 150px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        } 
+        .item .pic {
+            height: 200px;
+            background-size: 100% 100%;
+            overflow: hidden;
+            /* 添加圆角 */
+            border-radius: 10px;
+            /* 添加阴影 */
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
+        }
+        .item .pic p {
+            color: white;
+            font-size: 14px;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 180px;
+            margin-right: 5px;
+            text-align: right;
+        }
+        .item .title {
+            font-size: 16px;
+            height: 25px;
+            line-height: 25px;
+            /* 一下三行会让文本溢出部分变成省略号 */
+            /* 溢出隐藏 */
+            overflow: hidden;
+            /* 文本溢出，超出部分省略号 */
+            text-overflow: ellipsis;
+            /* 文本不换行 */
+            white-space: nowrap;
+        }
+        .item .bottom {
+            overflow: hidden;
+        }
+        .item .bottom span {
+            float: left;
+            width: 50%;
+            height: 25px;
+            line-height: 25px;
+        }
+        .item .bottom .money{
+            font-size: 16px;
+            color: #ff6050;
+        }
+        .item .bottom .looks {
+            text-align: right;
+            font-size: 14px;
+            color: #a5a7b4;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="item">
+            <div class="pic" style="background-image: url(../img/课程/爬虫.jpg);">
+                <p>共12节</p>
+            </div>
+            <p class="title">使用爬虫和Flask建设什么什么你们</p>
+            <p class="bottom">
+                <span class="money">¥99.00</span>
+                <span class="looks">2184观看</span>
+            </p>
+        </div>
+        <div class="item">
+            <div class="pic" style="background-image: url(../img/课程/Python.jpg);">
+                <p>共12节</p>
+            </div>
+            <p class="title">使用爬虫和Flask建设什么什么你们</p>
+            <p class="bottom">
+                <span class="money">¥29.00</span>
+                <span class="looks">2184观看</span>
+            </p>
+        </div>
+        <div class="item">
+            <div class="pic" style="background-image: url(../img/课程/程序员.jpg);">
+                <p>共12节</p>
+            </div>
+            <p class="title">使用爬虫和Flask建设什么什么你们</p>
+            <p class="bottom">
+                <span class="money">¥29.00</span>
+                <span class="looks">2184观看</span>
+            </p>
+        </div>
+        <div class="item">
+            <div class="pic" style="background-image: url(../img/课程/Sprint\ Cloud.jpg);">
+                <p>共12节</p>
+            </div>
+            <p class="title">使用爬虫和Flask建设什么什么你们</p>
+            <p class="bottom">
+                <span class="money">¥129.00</span>
+                <span class="looks">2184观看</span>
+            </p>
+        </div>
+    </section>
+</body>
+</html>

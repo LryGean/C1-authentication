@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>2_position</title>
+    <link rel="icon" href="../../../images/头像.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+       div, span {
+           width: 100px;
+           height: 100px;
+           background-color: gold;
+           margin: 10px;
+       }
+       .d1 {
+           background-color: tomato;
+       }
+       .d2 {
+            background-color: greenyellow;
+       }
+       .d3 {
+           background-color: skyblue;
+       }
+       /* 元素脱离文档流,行元素支持所有CSS样式 */
+       div {
+           position: absolute;
+       }
+       /* 块元素内容撑开宽高 */
+       /* 清除子集浮动 */
+       p {
+           background-color: red;
+           position: absolute;
+       }
+    </style>
+</head>
+<body>
+    <!-- <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <span style="background-color: gold;position: absolute;" class="d3">
+    </span> -->
+    <p>大郎该吃药了！</p>
+</body>
+</html>
+
+<!-- absolute使span支持宽高 -->

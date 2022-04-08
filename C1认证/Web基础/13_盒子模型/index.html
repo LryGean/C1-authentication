@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>盒子模型</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        .box1, .box2 {
+            width: 300px;
+            height: 100px;
+            /* solid:实线 */
+            border: 3px solid red;
+            /* 上下左右：10px边距 */
+            padding: 10px;
+            margin: 30px;
+        }
+        .box1 {
+            /* 标准盒模型 */
+            /* 实际宽度 = width + padding + border = 300px + 10px*2 + 3px*2 = 326px
+               实际高度 = height + padding + border =100px + 10px*2 + 3px*2 = 126px
+            */
+            /* 计算实际占位需要加上margin */
+            box-sizing: content-box;
+        }
+        .box2 {
+            /* 怪异盒模型 */
+            /* 实际宽度 = width */
+            /* 内容宽度 = width - padding - border
+                       = 300px - 10px*2 - 3px*2
+                       = 274px  
+            */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">标准盒模型</div>
+    <div class="box2">怪异盒模型</div>
+</body>
+</html>

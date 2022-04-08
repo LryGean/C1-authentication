@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>伪类选择器</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        div {
+            /* 常态 */
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+        }
+        div:hover {
+            background-color: tomato;
+        }
+        
+        /* 链接前的状态 */
+        a:link {
+            color: tomato;
+        }
+
+        /* 访问后的状态 */
+        a:visited {
+            color: skyblue;
+        }
+
+        /* 鼠标悬停状态 */
+        a:hover {
+            color: gold;
+        }
+
+        a:active {
+            color: pink;
+        }
+
+        input {
+            /* 相当于border */
+            outline: 0;   
+        }
+        input:focus {
+            border: 2px solid orange;
+        }
+
+        /* li只能是第一个标签 */
+        ul li:first-child {
+            color: red;
+        }
+
+        /* li不用是第一个子标签，li类型的第一个 */
+        ul li:first-of-type {
+            color: skyblue;
+        }
+
+        /* 不精准，包含性较强 */
+        ul li:nth-child(2) {
+            color: greenyellow;
+        }
+
+        /* 精准指定标签 */
+        ul li:nth-of-type(2n) {
+            color: hotpink;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <a href="https://ac.csdn.net" target="_blank">CSDN</a>
+    <br>
+    <input type="text">
+    <br>
+    <ul>
+        <h1>给予</h1>
+        <li>劝学诗</li>
+        <li>书中自有千钟粟</li>
+        <li>书中自有黄金屋</li>
+        <li>书中车马多如簇</li>
+        <li>书中自有颜如玉</li>
+    </ul>
+</body>
+</html>
+
+
+<!-- a标签有4种伪类，建议按顺序书写 -->
+<!-- link visited hover active -->

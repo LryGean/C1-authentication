@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>背景图</title>
+    <link rel="icon" href="../../images/头像.ico">
+    <style>
+        img {
+            width: 800px;
+            height: 486.725px;
+        }
+        div {
+            width: 900px;
+            height: 547px;
+            background-color: darkorange;
+            background-image: url(../../images/背景.jpg);
+            background-size: 450px;
+            /* 只给高度进行等比例写法 */
+            /* background-size: auto 250px; */
+
+            /* 
+                contain:图片长边占满父级
+                cover:图片短边占满父级    
+            */
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <img src="../../images/背景.jpg" alt="图片加载失败" title="背景">
+    <div></div>
+</body>
+</html>

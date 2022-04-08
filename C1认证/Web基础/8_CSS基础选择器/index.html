@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>CSS基础选择器</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        /* 
+            选择器名 {
+                属性：属性值;
+            }
+        */
+        
+        /* 通配符选择器 */
+        * {
+            color: red;
+        }
+        
+        
+        /* 标签选择器 */
+        a {
+            text-decoration: none;  /* 去掉下划线 */
+        }
+        
+
+        /* 类选择器 */
+        .desc {
+            color: blue;
+        }
+
+
+        /* id选择器 */
+        #box {
+            border: 1px solid #FF8800;
+            background-color: #FFFFBB;
+        }
+
+        
+        /* 组合选择器 */
+        /* div下的所有a标签 */
+        /* #box a{
+            color: aqua;
+        } */
+
+        /* 子代选择器：只选中第一代 */
+        #box>a{
+            color: aqua;
+        }
+
+
+        /* 兄弟选择器*/
+        /* +：所选中后面第一个元素  */
+        /* #target+li {
+            color: #EEEE00;
+        } */
+        
+        /* ~：所选中后面所有元素  */
+        #target~li {
+            color: #EEEE00;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <a href="#">CSDN能力认证</a>
+        <ul>
+            <a href="#">CSDN能力认证</a>
+            <li>C1见习工程师</li>
+            <li id="target">C4前端工程师基础能力认证</li>
+            <li>C4Java工程师基础能力认证</li>
+            <li>C4Python工程师基础能力认证</li>
+            <li>C5全栈工程师能力认证</li>
+        </ul>
+        <p class="desc">C站能力认证是由中国软件开发者网CSDN制定并推出的一个认证标准,C站软件工程师能力认证模块包含：
+            C1见习能力认证、C4专项能力认证、C5全栈能力认证，开发者们根据实际情况和目标选择适合自己的认
+            证路径
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>定位</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        div {
+            font-size: 30px;
+        }
+        .box1 {
+            width: 500px;
+            height: 1500px;
+            background-color: skyblue;
+            margin: 50px;
+            position: relative;
+        }
+        .box2 {
+            width: 400px;
+            height: 400px;
+            background-color: steelblue;
+            margin-left: 50px;
+        }
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background-color: slateblue;
+            /* 相对定位（相对自身的偏移） */
+            /* position: relative;
+            top: 50px;
+            left: 100px; */
+            
+            /* 绝对定位（相对父级非static，若父元素均为static，则相对于body元素） */
+            /* 设置box1为非static，此时box3相对于box1 */
+            /* position: absolute;
+            top: 50px;
+            left: 30px; */
+
+            /* 固定定位，相对于整个浏览器窗口（永远固定一个位置，包括浏览器滚动） */
+            position: fixed;
+            top: 10px;
+            right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <div class="box3"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>清除浮动</title>
+    <link rel="icon" href="../../images/头像.ico">
+    <style>
+        .first {
+            background-color: skyblue;
+            /* (1)在父级中使用height，拓展性不好 */
+            /* height: 200PX; */
+            
+            /* ----------------------- */
+            /* (2)使用overflow清除 */
+            /* overflow: hidden; */
+            /* -------推荐使用-------- */
+
+        }
+        .first div {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            
+            /*  使用浮动后，1和2两个盒子脱离文档流，
+                first检测不到1和2，高度无法被撑开 
+            */
+            float: left;
+        }
+        .second {
+            height: 300px;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+        <!-- (3)在有浮动的元素后添加无关标签清除左右浮动，使用clear:both -->
+        <section style="clear: both;"></section>
+    </div>
+    <div class="second"></div>
+</body>
+</html>

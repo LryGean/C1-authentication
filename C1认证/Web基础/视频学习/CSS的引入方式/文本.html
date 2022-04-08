@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>文本</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*  html {
+                font-size: 10px;
+            } 
+        */
+
+        p {
+            color: skyblue;
+            background-color: bisque;
+            /*  开发版浏览器支持8px最小字体
+                用户浏览器一般支持最小14px最小字体
+                默认字体16px大小
+            */
+            /* font-size: 8px; */
+
+
+            /* 当高度等于行高，文本垂直居中 */
+            /* height: 80px; */
+            line-height: 80px;
+            font-size: 30px;
+            /*  em:是相对单位
+                1em=父级标签的字体大小
+            */
+            font-family: "楷体";
+            text-align: center;
+
+            /* 首行缩进 */
+            text-indent: 2em;
+            /* 字体间距 */
+            letter-spacing: 10px;
+            /* 单词间距 */
+            word-spacing: 50px;
+
+            /* 英文大小写 */
+            /*  uppercase:大写
+                lowercase:小写
+                capitalize:首字母大写
+            */
+            text-transform: capitalize;
+        }
+
+        a  {
+            /* 文本装饰线 */
+            font-size: 30px;
+
+            /*  none:什么都没有
+                underline:下划线
+                overline:上划线
+                line-through:删除线     
+            */
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <!-- 此时p标签文本内容字体大小为40px -->
+    <p>大郎，该吃药了！大郎，该吃药了！大郎，该吃药了！大郎，该吃药了！大郎，该吃药了！大郎，该吃药了！大郎，该吃药了！大郎，该吃药了！</p>
+    <p>Welcome to CSDN</p>
+    <a href="http://ac.csdn.net">csdn</a>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>浮动</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            margin: 0 20px;
+            /* 浮动 */
+            /* 左浮动 */
+            /* float: left; */
+            /* 右浮动 */
+            float: right;
+            /* 浮动导致li的父元素ul高度为0，后面的元素会向上移动 */
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: slateblue;
+            /*  清除浮动（设置那边浮动，就清除哪边的浮动）
+                左右都设置浮动，则用both
+            */
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>我是第一个li元素</li>
+        <li>我是第二个li元素</li>
+        <li>我是第三个li元素</li>
+        <li>我是第四个li元素</li>
+        <li>我是第五个li元素</li>
+        <li>我是第六个li元素</li>
+        <li>我是第七个li元素</li>
+    </ul>
+    <div class="box"></div>
+</body>
+</html>

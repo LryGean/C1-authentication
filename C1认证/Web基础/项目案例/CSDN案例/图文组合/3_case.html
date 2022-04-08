@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>case3</title>
+    <link rel="icon" href="../../../images/头像.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul {
+            width: 300px;
+        }
+
+        ul li {
+            height: 62px;
+        }
+        ul li:hover {
+            background-color: #e6e6e6;
+        }
+        ul li img {
+            width: 104px;
+            height: 40px;
+            float: left;
+            margin-left: 15px;
+            /* 使用margin-top注意塌陷问题 */
+            margin-top: 12px;  
+        }
+        ul li div {
+            width: 171px;
+            height: 40px;
+            margin-top: 12px;
+            float: left;
+            margin-left: 10px;
+        }
+        ul li div p {
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="selected">
+            <!-- 是行快标签，不是块标签，不会出现塌陷问题 -->
+            <img src="../img/音乐/飙升榜.png" alt="图片加载不出来">
+            <div>
+                <p>飙升榜</p>
+                <p style="color: #b1b1b1;">更新79首</p>
+            </div>
+        </li>
+        <li>
+            <!-- 是行快标签，不是块标签，不会出现塌陷问题 -->
+            <img src="../img/音乐/原创榜.png" alt="图片加载不出来">
+            <div>
+                <p>原创榜</p>
+                <p style="color: #b1b1b1;">刚刚更新</p>
+            </div>
+        </li>
+        <li>
+            <!-- 是行快标签，不是块标签，不会出现塌陷问题 -->
+            <img src="../img/音乐/热歌榜.png" alt="图片加载不出来">
+            <div>
+                <p>热歌榜</p>
+                <p style="color: #b1b1b1;">每周四更新</p>
+            </div>
+        </li>
+        <li>
+            <!-- 是行快标签，不是块标签，不会出现塌陷问题 -->
+            <img src="../img/音乐/新歌榜.png" alt="图片加载不出来">
+            <div>
+                <p>新歌榜</p>
+                <p style="color: #b1b1b1;">每天更新</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

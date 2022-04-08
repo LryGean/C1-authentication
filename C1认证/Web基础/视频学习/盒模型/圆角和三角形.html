@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>Document</title>
+    <link rel="icon" href="../../images/头像.ico">
+    <style>
+        /* 圆角 */
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            margin: 10px;
+            /* 圆角 */
+            /* border-radius: 20px; */
+            
+            /* 像素大于等于边长的一半时，变为正圆 */
+            /* border-radius: 50px; */
+            /* 或者50% */
+            /* border-radius: 50%; */
+
+            /* 圆环 */
+            /* border: 20px solid pink;
+            border-radius: 70px; */
+
+            /* 为单一角设置 */
+            /* border-top-right-radius: 50px; */
+        }
+
+        /* 三角形 */
+        .s {
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            /*  transparent:透明度
+                等价黑色的透明度为0：rgba(0, 0, 0, 0)
+            */
+            border: 20px solid pink;
+            border-right-color: transparent;
+            border-top-color: transparent;
+            border-bottom-color: rgba(0, 0, 0, 0);
+            /* 扇形 */
+            /* border-radius: 50%; */
+        }
+    </style>
+</head>
+<body>
+    <div>CSDN</div>
+
+    <div class="s"></div>
+</body>
+</html>

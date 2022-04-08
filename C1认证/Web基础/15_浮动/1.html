@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>clear</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+        .layout {
+            width: 120px;
+            height: 300px;
+            margin: 10px;
+            background-color: cadetblue;
+            float: left;
+        }
+        .content {
+            width: 340px;
+            height: 300px;
+            margin: 10px;
+            background-color: powderblue;
+            float: left;
+        }
+        footer {
+            width: 500px;
+            height: 40px;
+            background-color: darkseagreen;
+            /* 清除左右浮动 */
+            /* clear: both; */
+
+            /* 清除左浮动 */
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="layout flex-center">侧边栏</section>
+        <section class="content flex-center">内容</section>
+    </main>
+    <footer></footer>
+</body>
+</html>

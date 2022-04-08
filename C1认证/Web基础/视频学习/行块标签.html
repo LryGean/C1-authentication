@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>inline-block</title>
+    <link rel="icon" href="../images/头像.ico">
+    <style>
+         /* 
+        ************************************************
+        *   行块标签特点：                                *
+        *              同排序跟显示，遇到父级边界换行    *
+        *              没有宽高的时候内容撑开宽高        * 
+        *              换行被解析                       *
+        ************************************************
+        */
+
+        /* 
+            若单独只给width或height，图片等比例变化
+            两个都给，图片压缩处理
+        */
+        img {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../images/头像.ico" alt="图片加载失败" title="背景">
+    <img src="../images/头像.ico" alt="图片加载失败" title="背景">
+    <img src="../images/头像.ico" alt="图片加载失败" title="背景">
+</body>
+</html>
