@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="李容宇">
+    <title>页面框架</title>
+    <link rel="icon" href="./img/头像.ico">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <style>
+        .wrap {
+            min-width: 1400px;
+            position: absolute;
+        }
+
+        nav {
+            height: 80px;
+            background-color: #808082;
+            position: relative;
+        }
+        .wrap .center {
+            width: 100%;
+            overflow: hidden;
+        }
+        .wrap .center .c1 {
+            width: 700px;
+            height: 150px;
+            background-color: #808082;
+            margin: 30px auto;
+            font-size: 20px
+        }
+        .wrap .center .c2 {
+            width: 700px;
+            margin: 0 auto 20px auto;
+            background-color: #027E03;
+            overflow: hidden;
+        }
+        .wrap .center .c2 div {
+            width: 167.5px;
+            height: 300px;
+            float: left;
+            margin: 0 0 0 10px;
+            background-color: #808082;
+        }
+        .wrap .center .c2 div:nth-of-type(1) {
+            margin-left: 0;
+        }
+        .wrap .bottom {
+            width: 100%;
+            height: 100px;
+            background-color: #808082;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <nav>top</nav>
+        <div class="center">
+            <div class="c1">banner</div>
+            <div class="c2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+        </div>
+        <div class="bottom">footer</div>
+    </div>
+</body>
+</html>
